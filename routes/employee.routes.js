@@ -6,7 +6,7 @@ const { EmployeeModel } = require("../model/employee.model");
 const employeeRouter = express.Router()
 
 
-employeeRouter.post("/add",auth,async(req,res)=>{
+employeeRouter.post("/employees",auth,async(req,res)=>{
     const {email,firstName,lastName} = req.body
  
     try { 
